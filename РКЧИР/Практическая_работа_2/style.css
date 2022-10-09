@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+.latexcod {
+    background-color: #ebfafa;
+    font-family: 'Akaya Kanadaka', cursive;
+    border: 2px dashed black;
+}
+
+.form {
+    background-color: #edeff0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+body {
+    font-size: larger;
+}
+
+.my_link a {
+    text-decoration: none;
+    color: #666;
+    background-color: #edeff0;
+    font-size: larger;
+}
+
+a:hover{
+    background: #786b59; /* Цвет фона под ссылкой */ 
+    color: #ffe; /* Цвет ссылки */ 
+}
+a:active{
+    color: rgb(189, 189, 127);
+}
+
+a:visited{
+    color:rgb(195, 193, 76)
+} 
+
+header{
+    background-color: rgb(247, 247, 167);
+    height: 5rem;
+
+}
+
+.header_contents{
+    font-size: 20px;
+    line-height: 5rem;
+}
+
+.ocr img{
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid black;
+}
