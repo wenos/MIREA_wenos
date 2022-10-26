@@ -7,7 +7,6 @@ Hash_t::Hash_t(int n){
 	h_table = new node * [n]{};
 	size = n;
 	real_size = 0;
-}
 
 int h(int key, int mod) {
 	return key % mod;
