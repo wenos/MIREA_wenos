@@ -7,7 +7,7 @@ void bin_output_string(int);
 void bin_output();
 
 int main() {
-	Hash_t A(10);
+	Hash_t A(10);к
 	bool st = 1;
 	int switch_on;
 	std::cout << "Select an operation and enter its number \n";
