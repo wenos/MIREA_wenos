@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самоучка по LaTeX</title>
+    <link rel="icon" type="image/png" href="LaTex_logo.png" height=10px width=5px>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="glassmorphism.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="rot.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="grid_main.css">
+    <link rel="stylesheet" href="1.css">
+
+
+</head>
+<body class="grid_container_main">
+<div class="it_header">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="LaTeX_logo.png" height="60" width="45" alt="pupupu">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+            <div class="menu">
+                <li>
+                    <form action="table.html">
+                        <button class="btn">Таблицы в LaTeX</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="math.html">
+                        <button class="btn">Математика в LaTeX</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="grafic.html">
+                        <button class="btn">Графика в LaTeX</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="text_edit.html">
+                        <button class="btn">Обработка текста в LaTeX</button>
+                    </form>
+                </li>
+            </div>
+        </ul>
+    </nav>
+</div>
+<div class="it_main">
+    <main>
+        <div class="content_grid_form">
+            <div class="item_2">
+                <div class="title_form">
+                    <div> Contact</div>
+                </div>
+            </div>
+            <div class="item_1">
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+            </div>
+            <div class="item_1">
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Lastname</span>
+                    <i></i>
+                </div>
+            </div>
+            <div class="item_1">
+                <div class="inputbox">
+                    <input required="required" type="tel">
+                    <span>Telephone</span>
+                    <i></i>
+                </div>
+            </div>
+            <div class="item_1">
+                <div class="inputbox">
+                    <input required="required" type="email">
+                    <span>Email</span>
+                    <i></i>
+                </div>
+            </div>
+            <div class="item_2">
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Youк message</span>
+                    <i></i>
+                </div>
+            </div>
+            <div class="inputbox">
+                <button class="btn_submit">Submit</button>
+            </div>
+        </div>
+        <h1 id="TopicStart" align="center">
+            <font color="#faceac">Самоучитель по L<sup>A</sup>T<sub>E</sub>X</font>
+        </h1>
+        <div>
+            TeX — <em> система компьютерной вёрстки, разработанная американским профессором информатики
+            <a href="https://ru.wikiquote.org/wiki/%D0%94%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%B4_%D0%9A%D0%BD%D1%83%D1%82"
+               ,
+               target="blank" , title="Лучшие цитаты Дональда Кнута"> Дональдом Кнутом</a>
+            в целях создания компьютерной типографии. В неё входят средства для секционирования документов, для
+            работы с
+            перекрёстными ссылками. В частности, благодаря этим возможностям, TeX популярен в академических кругах,
+            особенно
+            среди математиков и физиков. </em>
+        </div>
+
+        <div class="mega_a">
+            <div class="it-100">
+                A
+            </div>
+            <div class="it-75">
+                A
+            </div>
+            <div class="it-25">
+                A
+            </div>
+            <div class="it-50">
+                A
+            </div>
+            <div class="it-50">
+                A
+            </div>
+        </div>
+
+        <div class="gal">
+            <div class="about_card_holder_1">
+                    <img src="images/cat_1.jpeg">
+                <div class="bl_1"><p>Котик номер 1</p></div>
+            </div>
+
+            <div class="about_card_holder_2">
+                <img src="images/cat_2.jpeg">
+                <div class="bl_1"><p>Котик номер 2</p></div>
+            </div>
+
+            <div class="about_card_holder_3">
+                <img src="images/cat_3.jpeg">
+                <div class="bl_1"><p>Котик номер 3</p></div>
+            </div>
+
+            <div class="about_card_holder_4">
+                <img src="images/cat_4.jpeg">
+                <div class="bl_1"><p>Котик номер 4</p></div>
+            </div>
+            <div class="about_card_holder_5">
+                <img src="images/cat_5.jpeg">
+                <div class="bl_1"><p>Котик номер 5</p></div>
+            </div>
+
+
+        </div>
+
+        <div>
+            <h2>Начала работы с Latex «<a href="#TopicEnd">вниз</a>» </h2>
+            <ul>
+
+                <li>
+                    <h3>Вставка кода в Latex</h3>
+                    Ключевое слово <strong>verbatim</strong> – дословно, означает вставку текста в том же формате, в
+                    котором
+                    он
+                    находился внутри редактора<br>
+                    <p>\begin{verbatim}<br>
+                        print(HelloWorld)<br>
+                        print(HelloWorld)<br>
+                        print(HelloWorld)<br>
+                        \end{verbatim}</p>
+                    <pre>
+print(HelloWorld)
+print(HelloWorld)
+print(HelloWorld)
+          </pre>
+                </li>
+                <li>
+                    <h3>Цитирование</h3>
+                    <ol>
+                        <li>
+                            Небольшая цитата – \quote{}<br>
+                            Например: \quote{HelloWorld} выведет <cite>HelloWorld</cite>
+                        </li>
+                        <li>
+                            Большая цитата – \quotation{}<br>
+                            Например: \quotation{HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                            HelloWorld,
+                            HelloWorld,
+                            HelloWorld,
+                            HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                            HelloWorld,
+                            HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                            HelloWorld,
+                            HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                            HelloWorld.}
+                            выведет
+                            <blockquote>HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                                HelloWorld,
+                                HelloWorld,
+                                HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                                HelloWorld,
+                                HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                                HelloWorld,
+                                HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld, HelloWorld,
+                                HelloWorld.
+                            </blockquote>
+
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Списки</h3>
+                    <ol type="i">
+                        <li>
+                            Ключевое словое <strong>enumerate</strong> – нумерованный список. Каждый новый номер
+                            обозначается словом
+                            \item<br>
+                            \begin{enumerate}<br>
+                            \item \textbf{HelloWorld}<br>
+                            \item \textit{HelloWorld}<br>
+                            \item \underline{HelloWorld}<br>
+                            \end{enumerate}<br>
+                            <ol>
+                                <li>
+                                    <b>HelloWorld</b>
+                                </li>
+                                <li>
+                                    <i>HelloWorld</i><br>
+                                </li>
+                                <li>
+                                    <u>HelloWorld</u>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Ключевое словое <strong>itemize</strong> – маркированный список. Каждый новый маркер
+                            обозначается словом
+                            \item<br>
+                            \begin{itemize}<br>
+                            \item \textbf{HelloWorld}<br>
+                            \item \textit{HelloWorld}<br>
+                            \item \underline{HelloWorld}<br>
+                            \end{itemize}<br>
+                            <ul type="disc">
+                                <li>
+                                    <b>HelloWorld</b>
+                                </li>
+                                <li>
+                                    <i>HelloWorld</i><br>
+                                </li>
+                                <li>
+                                    <u>HelloWorld</u>
+                                </li>
+                            </ul>
+                        </li>
+
+                        </li>
+
+                    </ol>
+                <li>
+                    <h3>Вставка картинок в Latex</h3>
+                    Команда \includegraphics[width="доля от реального размера картинки"\linewidth]{название
+                    файла}<br>
+                    Например: \includegraphics[width="0.7"\linewidth]{милый_котик.png}
+
+                    <figure class="ocr">
+                        <figcaption>Самый милый котик</figcaption>
+                        <img src="https://cs7.pikabu.ru/post_img/big/2019/03/26/11/1553625291161446207.jpg"
+                             height="200"
+                             width="200"
+                             alt="Интернет кончился купите новый">
+                        <p>Текст ради текста</p><br>
+                        <p>Текст ради текста</p><br>
+                        <p>Текст ради текста</p><br>
+                    </figure>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <h3 id="TopicEnd">Список определений</h3>
+        <dl>
+            <dt>Простые числа</dt>
+            <dd> Целые числа большие единицы, которые делятся только на единицу и себя</dd>
+            <dt>Простые множители</dt>
+            <dd>Это простые числа, которые делят это число нацело.</dd>
+            <dt>Факторизация</dt>
+            <dd>Разложение числа на произведение простых множителей</dd>
+            <dt><abbr title="Наибольший Общий Делитель">НОД</abbr> чисел a и b</dt>
+            <dd>Это наибольшее число, на которое можно разделить числа a и b без остатка.</dd>
+            <dd>Это такое максимальное число, на которое делится без остатка число a и число b.</dd>
+            <dt><abbr title="Наименьшее общее кратное">НОК</abbr> чисел a и b</dt>
+            <dd>Это наименьшее число, которое кратно a и b.</dd>
+            <dd>Это такое маленькое число, которое делится без остатка на число a и число b.</dd>
+        </dl>
+    </main>
+</div>
+
+<div class="it_sidebar block_1">
+    sidebar
+</div>
+
+<div class="it_add block_1">
+    add
+</div>
+
+<div class="footer it_footer">
+    <footer>
+        <div class="content_grid_footer">
+            <div class="container">
+                <div class="sec aboutus">
+                    <h2> About Us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui vel elementum
+                        viverra. Suspendisse maximus nisi nulla, sed luctus lorem pellentesque et.
+                    </p>
+                    <ul class="container_for_icons">
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube-play"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-paper-plane"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/wenos"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Us</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>Вернадского 86с1</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="#">+7 992 287 15 53</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="#">ramalguseynov03@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2022 L<sup>A</sup>T<sub>E</sub>X tutorial. All right Reserved.</p>
+    </div>
+</div>
+</body>
+</html>
