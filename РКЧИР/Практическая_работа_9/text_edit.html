@@ -1,61 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Самоучка по LaTeX</title>
-    <link rel="icon" type="image/png" href="C:\Users\ramal_rpbh419\OneDrive\Документы\РКЧИР\Практическая_работа_2\LaTex_logo.png">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo_style">
-        <a href="index.html"> 
-        <img src="LaTex_logo.png" height="60" width="45"
-                alt="Интернет кончился купите новый">
-        </a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Самоучка по LaTeX</title>
+  <link rel="icon" type="image/png" href="images/LaTeX_logo.png" height=10px width=5px>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/563ce4d2d7.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="grid_container_main">
+<nav class="navbar header-mark">
+  <div class="logo">
+    <a href="index.html">
+      L<sup>A</sup>T<sub>E</sub>X
+    </a>
+  </div>
+  <ul class="nav-links">
+    <input type="checkbox" id="checkbox_toggle">
+    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+    <div class="menu">
+      <li>
+        <form action="table.html">
+          <button class="btn">
+                        <span class="box">
+                            Таблицы в L<sup>a</sup>T<sub>e</sub>X
+                        </span>
+          </button>
+        </form>
+      </li>
+      <li>
+        <form action="math.html">
+          <button class="btn">
+                        <span class="box">
+                            Математика в L<sup>a</sup>T<sub>e</sub>X
+                        </span>
+          </button>
+        </form>
+      </li>
+      <li>
+        <form action="converter.html">
+          <button class="btn">
+                        <span class="box">
+                            Тренажер по L<sup>a</sup>T<sub>e</sub>X
+                        </span>
+          </button>
+        </form>
+      </li>
+    </div>
+  </ul>
+</nav>
+
+<div class="main-mark">
+  <main>
+    <div class="box-for-code">
+      <div class="latex-code">
+          sdasd
       </div>
-      <div align="center" class="my_link header_contents">
-        <nav>
-          <a href="table.html"> Таблицы в LaTeX</a>
-          <a href="math.html"> Математика в LaTeX</a>
-          <a href="grafic.html"> Графика в LaTeX</a>
-        </nav>
+      <div class="vertical-line">
       </div>
-    </header>
-    <address>
-        <ul>
-          <li>
-            <h3>Форматирование текста</h3>
-            <ol>
-              <li>
-                Команда <a class="latexcod">\textbf{}</a> используя данную команду Вы можете сделать текст жирным<br>
-                Например: \textbf{HelloWorld} выведет <b>HelloWorld</b>
-              </li>
-              <li>
-                Команда \textit{}: используя данную команду Вы можете сделать текст курсивным<br>
-                Например: \textit{HelloWorld} выведет <i>HelloWorld</i>
-              </li>
-              <li>
-                Команда \underline{}: используя данную команду Вы можете подчеркнуть текст<br>
-                Например: \underline{HelloWorld} выведет <u>HelloWorld</u>
-              </li>
-              <li>
-                Если писать несколько строчек текста друг под другом, например
-                \textbf{Hello}<br>
-                \textbf{World}<br>
-                В выводе мы получим <b>Hello</b><b>World</b><br>
-                Latex считает, что если мы написали строчки друг под другом, значит, мы все равно хотим написать все в
-                одной строке<br>
-                Для разделения строк можно использовать «//» после первой введенной строки.<br>
-                \textbf{Hello}//<br>
-                \textbf{World}<br>
-                <b>Hello</b><br>
-                <b>World</b>
-              </li>
-            </ol>
-          </li>
-        </ul>
-    </address>
-  </body>
+      <div class="latex-result">
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div class="cat-mark">
+  <div class="cat-mark-content">
+    <p>
+      У нашего сайта нет рекламы, но есть уголок котиков, чтобы вы могли делать перерыв и смотреть на котиков ^-^
+    </p>
+    <div class="cat-img">
+      <img src="images/cat_7.jpg" alt="Котик">
+    </div>
+    <div class="cat-img">
+      <img src="images/cat_5.jpeg" alt="Котик">
+    </div>
+    <div class="cat-img">
+      <img src="images/cat_3.jpeg" alt="Котик">
+    </div>
+    <div class="cat-img">
+      <img src="images/cat_2.jpeg" alt="Котик">
+    </div>
+    <div class="cat-img">
+      <img src="images/cat_4.jpeg" alt="Котик">
+    </div>
+  </div>
+</div>
+
+<div class="footer footer-mark">
+  <footer>
+    <div class="content_grid_footer">
+      <div class="container_footer">
+        <div class="sec aboutus">
+          <h2> О нас</h2>
+          <p>
+            Данный сайт создан студентом РТУ МИРЭА, чтобы обучить всех желающих текстовой разметке L<sup>A</sup>T<sub>E</sub>X. <br>
+            Подробнее об авторе вы можете узнать по его социальным сетям.
+          </p>
+          <ul class="container_for_icons">
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube-play"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-paper-plane"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Полезные Ссылки</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sec contact">
+          <h2>Contact Us</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa fa-map-marker"></i></span>
+              <span>Вернадского 86с1</span>
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i></span>
+              <p><a href="#">+7 800 555 35 35</a></p>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope"></i></span>
+              <p><a href="#">ramalguseynov03@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyrightText">
+    <p>Copyright © 2022 L<sup>A</sup>T<sub>E</sub>X tutorial. All right Reserved.</p>
+  </div>
+</div>
+
+<script src="pupupu.js"></script>
+
+</body>
 </html>

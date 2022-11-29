@@ -8,9 +8,9 @@
     <link rel="icon" type="image/png" href="images/LaTeX_logo.png" height=10px width=5px>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/563ce4d2d7.js" crossorigin="anonymous"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="https://kit.fontawesome.com/563ce4d2d7.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="grid_container_main">
@@ -43,15 +43,6 @@
                 </form>
             </li>
             <li>
-                <form action="converter.html">
-                    <button class="btn">
-                        <span class="box">
-                            Тренажер по L<sup>a</sup>T<sub>e</sub>X
-                        </span>
-                    </button>
-                </form>
-            </li>
-            <li>
                 <form action="text_edit.html">
                     <button class="btn">
                         <span class="box">
@@ -66,60 +57,27 @@
 
 <div class="main-mark">
     <main>
-        <div class="main-content">
-            <div class="download_latex">
-               <h3>
-                   Дистрибутивы TeX
-               </h3>
-                <p>Если вы новичок в TeX и LaTeX или просто хотите простую установку, получите полный дистрибутив TeX. TeX Users Group (TUG)
-                имеет список известных дистрибутивов, которые являются полностью или наименее в первую очередь свободным программным обеспечением.</p>
-                <div class="line"></div>
-                <ul>
-                    <li>
-                        <div class="name">
-                            <i class="fa fa-linux" aria-hidden="true"></i>
-                            <p>Linux</p>
-                        </div>
-                        <div class="dist-info">
-                            Проверьте свой источник программного обеспечения дистрибутивов Linux на наличие дистрибутива TeX, включая LaTeX. Вы также можете установить текущий дистрибутив TeX Live напрямую - на самом деле это может быть целесообразно, так как многие дистрибутивы Linux содержат только старые версии TeX Live, подробности см. в статусе пакета Linux TeX Live.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="name">
-                            <i class="fa fa-apple" aria-hidden="true"></i>
-                            <p>Apple</p>
-                        </div>
-                        <div class="dist-info">
-                            Дистрибутив MacTeX содержит все необходимое, включая полную систему TeX с самим LaTeX и редакторы для написания документов.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="name">
-                            <i class="fa fa-windows" aria-hidden="true"></i>
-                            <p>Windows</p>
-                        </div>
-                        <div class="dist-info">
-                            Ознакомьтесь с дистрибутивами MiKTeX orproTeXt или TeX Live; они содержат полную систему TeX с самим LaTeX и редакторами для написания документов.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="name">
-                            <i class="fa fa-globe" aria-hidden="true"></i>
-                            <p>Online</p>
-                        </div>
-                        <div class="dist-info">
-                            Онлайн-сервисы LaTeX, такие как Papeeria, Overleaf, ShareLaTeX, Datazar и база LaTeX, предлагают возможность редактировать, просматривать и загружать файлы LaTeX и полученные PDF-файлы.
-                        </div>
-                    </li>
-                </ul>
+        <h2>
+            Тренажер
+        </h2>
+        <p>
+            На нашем сайте вы можете не только изучить язык LaTeX, но и попрактиковаться в простейших формулах и работе с текстом.
+        </p>
+        <div class="frame-latex">
+            <div class="input-box">
+                <textarea type="text" placeholder="Введите ваш код"></textarea>
+            </div>
+            <div class="vertical-line"> </div>
+            <div class="output-box">
             </div>
         </div>
-        <div class="line"></div>
+        <button class="compile" onclick="parsing()">
+            Compile
+        </button>
 
         <div>
             $$a = {F \over m}$$
         </div>
-
     </main>
 </div>
 
@@ -129,19 +87,19 @@
             У нашего сайта нет рекламы, но есть уголок котиков, чтобы вы могли делать перерыв и смотреть на котиков ^-^
         </p>
         <div class="cat-img">
-        <img src="images/cat_6.jpeg" alt="Котик">
+            <img src="images/cat_7.jpg" alt="Котик">
         </div>
         <div class="cat-img">
-            <img src="images/cat_2.jpeg" alt="Котик">
+            <img src="images/cat_5.jpeg" alt="Котик">
         </div>
         <div class="cat-img">
             <img src="images/cat_3.jpeg" alt="Котик">
         </div>
         <div class="cat-img">
-            <img src="images/cat_4.jpeg" alt="Котик">
+            <img src="images/cat_2.jpeg" alt="Котик">
         </div>
         <div class="cat-img">
-            <img src="images/cat_5.jpeg" alt="Котик">
+            <img src="images/cat_4.jpeg" alt="Котик">
         </div>
     </div>
 </div>
@@ -190,7 +148,7 @@
                         </li>
                         <li>
                             <span><i class="fa fa-envelope"></i></span>
-                            <p><a href="#">Autor@gmail.com</a></p>
+                            <p><a href="#">ramalguseynov03@gmail.com</a></p>
                         </li>
                     </ul>
                 </div>
