@@ -1,0 +1,207 @@
+/* * {*/
+/*    margin: 0;*/
+/*}*/
+/*body {*/
+/*    margin-top: 100px ;*/
+/*    background-color: #212121;*/
+/*    display: flex;*/
+/*    color: #fff;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    !*position: relative;*!*/
+/*}*/
+ body p a {
+     text-decoration: none;
+     color: brown;
+ }
+
+ .list li{
+     text-decoration: none;
+ }
+
+ /*.notification {*/
+ /*    z-index: 1000;*/
+ /*    padding: 5px;*/
+ /*    border: 1px solid black;*/
+ /*    font-size: 20px;*/
+ /*    text-align: center;*/
+ /*    border-radius: 25px;*/
+ /*    background: #53abb7;*/
+ /*   position: relative;*/
+ /*}*/
+/* .welcome {*/
+/*     position: fixed;*/
+/*     top: 10px;*/
+/*     right: 10px;*/
+/* }*/
+/* .end {*/
+/*     z-index: 10000;*/
+/*     height: 20px;*/
+/*     width: 20px;*/
+/*     display: flex;*/
+/*     justify-content: center;*/
+/*     align-items: center;*/
+/*     background-color: #1a6f73;*/
+/*     border-radius: 50%;*/
+/*     position: absolute;*/
+/*     right: 0px;*/
+/*     top: -10px;*/
+/* }*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,400&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(249, 249, 217);
+    height: 97vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    /*flex-flow: column wrap;*/
+}
+
+.notification-section {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+/*.notification {*/
+/*    margin-bottom: 10px;*/
+/*    position: relative;*/
+/*    border: 1px solid black;*/
+/*    background: rgb(249, 249, 249);*/
+/*    padding-left: 2rem;*/
+/*    padding-right: 2rem;*/
+/*    padding-top: 1rem;*/
+/*    padding-bottom: 1rem;*/
+
+.notification {
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    background: #53abb7;
+    position: relative;
+/*}*/
+}
+
+.close-btn {
+    transition: 0.1s;
+    font-size: 10px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -6px;
+    right: -6px;
+    outline: none;
+    /*border: none;*/
+    /*border-left: 1px solid black;*/
+    /*border-bottom: 1px solid black;*/
+}
+
+.close-btn:hover {
+    color: white;
+    background: rgb(240, 49, 49);
+}
+
+.close-btn:active {
+    color: white;
+    background: rgb(199, 38, 38);
+}
+
+#createBtn {
+    width: 15rem;
+    height: 4rem;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,400&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(249, 249, 217);
+    height: 97vh;
+    overflow: scroll;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-block {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    border: 1px solid rgb(164, 164, 164);
+    background-color: rgb(248, 248, 248);
+}
+
+.img-block img {
+    position: relative;
+}
+
+#inputImgSize,
+#inputAreaSize {
+    font-size: 16px;
+    width: 248px;
+    position: absolute;
+    outline: 0;
+    top: 25px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgb(141, 141, 141);
+}
+
+#inputImgSize {
+    left: 30%;
+}
+
+#inputAreaSize {
+    right: 30%;
+}
+
+#changeImgSize,
+#changeAreaSize {
+    top: 60px;
+    position: absolute;
+    outline: none;
+    height: 35px;
+    width: 250px;
+    font-size: 16px;
+}
+
+#changeImgSize {
+    left: 30%;
+}
+
+#changeAreaSize {
+    right: 30%;
+}
+
+.bl img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+
+.bl {
+    background-color: #212121;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+
+}
